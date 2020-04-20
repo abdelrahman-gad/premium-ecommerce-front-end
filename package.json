@@ -1,0 +1,15 @@
+{
+  "name": "premium-e-commerce",
+  "version": "1.0.0",
+  "description": "reusable ecommerce templates and modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abdurrahman",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}

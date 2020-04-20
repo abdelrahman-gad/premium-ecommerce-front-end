@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../styles/0-plugins/0-plugins.scss"
+    ],
+    "names": [],
+    "file": "0-plugins.css"
+}
