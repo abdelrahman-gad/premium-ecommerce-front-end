@@ -1,1 +1,239 @@
 // product
+.product:hover{
+    box-shadow: 2px 0px 7px 5px rgba(240,240,240,1);
+    transition: all 0.3s  ease-in-out ;
+}
+.product{
+    .product-media{
+        position: relative;
+        .product-label{
+            color: $white;
+            display: block;
+            width: auto;        
+            padding: 6px 8px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1;
+        }
+        .label-circle{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            vertical-align: center;
+            padding-top: 12px;
+        }
+        .label-sale{
+            background-color: $crimson;
+        }
+        .label-new{
+            background-color: $lemon;
+        }
+        .label-out{
+            background-color: $darkGray;
+        }
+    }
+    
+    .product-action{
+        background-color: rgba(255,255,255,0.95);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;  
+        height: 60px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        a{
+            color: $lightBlack;
+            font-size: 16px;
+            padding: auto 8px;
+            i{
+                color: $mainGolden;
+                margin-right: 8px;
+            }
+            &:hover{
+                color: $mainGolden;
+            } 
+        }
+    }
+
+    .action-icon-top{
+        text-align: center;
+        height: 80px;
+        padding: 30px auto;
+        font-size: 14px;
+
+        i{
+            display: block;
+            margin: 6px auto;
+            text-decoration: none;
+        }
+    }
+    
+
+
+    .product-media:hover .product-action 
+        {   
+            opacity: 0.9;
+        }
+    
+    .product-action-inner{
+  
+        padding-left: 20px;
+        .ratings-container{            
+            font-size: 14px;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }
+    
+
+
+    .product-cat{
+      a{
+          text-decoration: none;
+          font-size:14px;
+          color:$lightBlack;
+          text-transform: capitalize;
+          &:hover{
+              text-decoration: none;
+              color: $lightBlack;
+          }
+      }
+    }
+    
+    .product-title{
+      a{
+       text-decoration: none;
+       color: $black;
+       font-size: 18px;
+       text-transform: capitalize;
+       &:hover{
+           color: $mainGolden;
+           text-decoration: none;
+       }
+      }   
+    }
+    .product-price{
+      color: $lightGray;
+      font-size: 20px;
+    }
+    .product-size{
+        margin-top: 10px;
+        a{
+             background-color: $lightGray;
+             color: $black;
+             padding: 4px 6px ;
+             text-decoration: none;
+             font-size: 14px;
+             &:hover{
+                 background-color: black;
+                 color: $white;
+                 text-decoration: none;
+             }
+        }
+    }
+    .ratings-container{
+        margin-top: 10px;
+        padding: 10px 50px;
+        display: flex;
+        padding-bottom: 30px;
+        justify-content: space-around;
+        font-size: 16px;
+    
+        .ratings-val{
+            i{
+                color: $darkYellow;
+            }
+        }
+        .ratings-text{
+            font-size: 16px;
+            color: $lightGray;
+        }
+    } 
+    a{
+        transition: all 0.3s ease-in-out ;
+    }
+}
+
+
+
+// product 2 
+.product-2{
+    border:1px solid #333;
+         .product-media{
+        border: 1px solid #333;
+        .product-action-vertical{
+           position: absolute;
+           top: 20px;
+           right: 20px;
+           .btn-product-icon{
+               
+               color:$mainGolden;
+               background-color: $white;
+               text-decoration: none;
+               
+               i{
+                   
+                   padding: 4px;
+                   border-radius:4px;
+                   width: 20px;
+                   height: 20px;
+
+               }
+               span{
+                   display: none;
+               }
+           }
+        }
+        .product-action-dark{
+           a{
+            color: $white;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color:$mainGolden
+            }
+           }
+           background-color: $black;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

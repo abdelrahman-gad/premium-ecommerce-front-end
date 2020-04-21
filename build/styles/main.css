@@ -1,5 +1,4 @@
 .test {
-  background-color: dodgerblue;
   border: 1px solid crimson;
 }
 
@@ -13,12 +12,12 @@ body {
 
 .title {
   color: #333;
-  margin: 20px auto 0;
+  margin: 30px auto 40px auto;
   font-size: 26px;
 }
 
 .border-bottem {
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #666;
 }
 
 .page-header {
@@ -56,14 +55,14 @@ body {
 
 .breadcrumb-nav ul li a {
   text-decoration: none;
-  color: #777;
+  color: #666;
   font-size: 16px;
   margin-left: 0px;
 }
 
 .breadcrumb-nav ul li i {
   margin-left: 12px;
-  color: #777;
+  color: #666;
   font-size: 12px;
 }
 
@@ -88,7 +87,7 @@ footer .footer-middle .widget .widget-list {
 
 footer .footer-middle .widget .widget-list li a {
   display: block;
-  color: #777;
+  color: #666;
   margin: 8px 0;
   font-size: 16px;
   font-weight: 400;
@@ -109,7 +108,7 @@ footer .footer-middle .widget-about img {
 footer .footer-middle .widget-about p {
   margin: 10px auto;
   font-size: 16px;
-  color: #777;
+  color: #666;
 }
 
 footer .footer-middle .widget-about .social-icons {
@@ -133,7 +132,7 @@ footer .footer-middle .widget-about .social-icons .social-icon {
   height: 2.4rem;
   color: #333;
   text-decoration: none;
-  border: 1px solid #777;
+  border: 1px solid #666;
   margin-right: 12px;
   border-radius: 50%;
   -webkit-transition: all 0.4s ease-in-out;
@@ -142,7 +141,7 @@ footer .footer-middle .widget-about .social-icons .social-icon {
 
 footer .footer-middle .widget-about .social-icons .social-icon i {
   font-size: 18px;
-  color: #777;
+  color: #666;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -188,7 +187,7 @@ footer .footer-bottom {
 }
 
 .banner .banner-content .banner-subtitle {
-  color: #777;
+  color: #666;
   font-weight: 400;
   font-size: 16px;
 }
@@ -231,7 +230,7 @@ footer .footer-bottom {
 }
 
 .banner-big .banner-content p {
-  color: #777;
+  color: #666;
 }
 
 .banner-big .banner-content .btn-rounded {
@@ -239,5 +238,231 @@ footer .footer-bottom {
   color: white;
   border: none;
   width: 50%;
+}
+
+.product:hover {
+  -webkit-box-shadow: 2px 0px 7px 5px #f0f0f0;
+          box-shadow: 2px 0px 7px 5px #f0f0f0;
+  -webkit-transition: all 0.3s  ease-in-out;
+  transition: all 0.3s  ease-in-out;
+}
+
+.product .product-media {
+  position: relative;
+}
+
+.product .product-media .product-label {
+  color: #fff;
+  display: block;
+  width: auto;
+  padding: 6px 8px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.product .product-media .label-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  vertical-align: center;
+  padding-top: 12px;
+}
+
+.product .product-media .label-sale {
+  background-color: #ef837b;
+}
+
+.product .product-media .label-new {
+  background-color: #a6c76c;
+}
+
+.product .product-media .label-out {
+  background-color: #ccc;
+}
+
+.product .product-action {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 60px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product .product-action a {
+  color: #666;
+  font-size: 16px;
+  padding: auto 8px;
+}
+
+.product .product-action a i {
+  color: #cc9966;
+  margin-right: 8px;
+}
+
+.product .product-action a:hover {
+  color: #cc9966;
+}
+
+.product .action-icon-top {
+  text-align: center;
+  height: 80px;
+  padding: 30px auto;
+  font-size: 14px;
+}
+
+.product .action-icon-top i {
+  display: block;
+  margin: 6px auto;
+  text-decoration: none;
+}
+
+.product .product-media:hover .product-action {
+  opacity: 0.9;
+}
+
+.product .product-action-inner {
+  padding-left: 20px;
+}
+
+.product .product-action-inner .ratings-container {
+  font-size: 14px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.product .product-cat a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.product .product-cat a:hover {
+  text-decoration: none;
+  color: #666;
+}
+
+.product .product-title a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.product .product-title a:hover {
+  color: #cc9966;
+  text-decoration: none;
+}
+
+.product .product-price {
+  color: #ebebeb;
+  font-size: 20px;
+}
+
+.product .product-size {
+  margin-top: 10px;
+}
+
+.product .product-size a {
+  background-color: #ebebeb;
+  color: #333;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.product .product-size a:hover {
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+}
+
+.product .ratings-container {
+  margin-top: 10px;
+  padding: 10px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 16px;
+}
+
+.product .ratings-container .ratings-val i {
+  color: #fcb941;
+}
+
+.product .ratings-container .ratings-text {
+  font-size: 16px;
+  color: #ebebeb;
+}
+
+.product a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-2 {
+  border: 1px solid #333;
+}
+
+.product-2 .product-media {
+  border: 1px solid #333;
+}
+
+.product-2 .product-media .product-action-vertical {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.product-2 .product-media .product-action-vertical .btn-product-icon {
+  color: #cc9966;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.product-2 .product-media .product-action-vertical .btn-product-icon i {
+  padding: 4px;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.product-2 .product-media .product-action-vertical .btn-product-icon span {
+  display: none;
+}
+
+.product-2 .product-media .product-action-dark {
+  background-color: #333;
+}
+
+.product-2 .product-media .product-action-dark a {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-2 .product-media .product-action-dark a:hover {
+  color: #cc9966;
 }
 /*# sourceMappingURL=main.css.map */
