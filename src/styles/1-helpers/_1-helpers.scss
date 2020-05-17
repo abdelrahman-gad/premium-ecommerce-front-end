@@ -3,7 +3,11 @@
 @import 'mixins';
 @import 'functions';
 
+@mixin specify{
+    border:1px solid crimson;
+}
+
 .test{
-    border: 1px solid crimson;
+  //  border: 1px solid crimson;
 }
 

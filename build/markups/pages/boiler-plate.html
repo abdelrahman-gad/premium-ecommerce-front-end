@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boiler Plate Page </title>
     <!-- main styles  -->
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../../styles/main.css">
     
     <!-- fontawsome CDN -->
     <link
@@ -22,6 +22,51 @@
 <body>
     <div class="page-wrapper">
      
+     <header>
+      <div class="header-top">
+       
+          <div class="header-left">
+              <div class="header-dropdown">
+                  <a href="#">Usd <i class="fas fa-chevron-down"></i></a>
+              <div class="header-menu">
+              <ul>
+                  <li><a href="#">Eur</a></li>
+                  <li><a href="#">Usd</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-dropdown">
+             <a href="#">Eng <i class="fas fa-chevron-down"></i></a>
+            <div class="header-menu">
+              <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">French</a></li>
+                <li><a href="#">Spanish</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="header-right">
+            <ul class="top-menu">
+              <li>
+              <a href="#">Links</a>
+                <ul>
+                  <li><a href="tel:#"><i class="fas fa-phone"></i>Call: +0123 456 789</a></li>
+                  <li><a href="wishlist.html"><i class="far fa-heart"></i>Wishlist <span>(3)</span></a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="#signin-modal" data-toggle="modal"><i class="icon-user"></i>Login</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+       
+      </div>
+      <div class="sticky-wrapper">
+           sticky wrapper navigation bar
+      </div>
+     </header>
+
       <main>
        <!-- page header -->
        <div class="page-header text-center" >
@@ -117,7 +162,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-12 offset-lg-3">
                       <figure class="footer-payments">
-                        <img src="../imgs/global/payments.png" alt="Payment methods" width="272" height="20">
+                        <img src="../../imgs/global/payments.png" alt="Payment methods" width="272" height="20">
                       </figure>    
                     </div>
                   </div>
@@ -127,5 +172,10 @@
            
       </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
 </body>
 </html>

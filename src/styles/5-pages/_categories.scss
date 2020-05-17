@@ -1,0 +1,92 @@
+.categories{
+  
+    .widget{
+           padding:10px 0  8px 0;
+           border-top:1px solid $darkGray;
+           transition: all 0.4s ease-in-out !important;
+
+    }
+    .widget-clean{
+        .filter{
+           
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: $mainGolden;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .widget-collapsible{
+        
+            a.widget-title{
+                color: $lightBlack;
+                text-decoration: none;
+                font-size:18px;
+                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                i{
+                    font-size: 16px;
+                    margin-right: 16px;
+                    margin-top: 8px;
+                }
+            }
+           
+        
+        .widget-body{
+              .filter-items{
+                  .filter-item{
+
+                      display: flex;
+                      justify-content: space-between;
+                      .custom-checkbox{
+                          input{
+                             width:16px;
+                             height: 16px;
+                             top:3px;
+                             position: relative;
+                             &:checked{
+                                 background-color: $black;
+                             }
+                          }
+                          label{
+                             margin-left: 8px;
+                             color: $black;
+                          }
+                      }
+                      label.item-count{
+                        margin-right: 10px;
+                        background-color: $gray;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4px;
+                        color: $lightBlack;
+                        width:24px;
+                        height: 20px;
+                        text-align: center;
+                        margin-top: auto;
+                        vertical-align: middle;
+                      }
+                  }
+              }
+        }
+
+       
+        
+    }
+}
+
+.products{
+    @include specify;
+}
+
+.show{
+   height: auto !important;
+
+}

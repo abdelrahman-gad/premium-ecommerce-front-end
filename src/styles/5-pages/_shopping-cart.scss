@@ -1,0 +1,221 @@
+// cart
+.cart{
+
+// adding checkout  styles
+     @import 'checkout';
+
+
+    .table-cart{
+        
+        padding: 10px 0;
+        thead{
+            tr{
+                th{
+                    color: $lightBlack;
+                    border-bottom: 1px solid $lightBlack;
+                    padding: 10px  ;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        tbody{
+         
+            
+            tr{
+             
+               // display: flex;
+               
+                padding: 20px auto;
+                border-bottom: 1px solid $lightBlack;
+
+                td{
+                   padding: 0 0px;
+                }
+                td.product-col{
+                    
+                    .product-item{
+                       
+                        display: flex;
+                        align-items: center;
+
+                        justify-content: start;
+                      
+
+                        figure{
+                          
+                          margin: 20px 0;
+                            img{
+                                display: block;
+                                height: auto;
+                                
+                            }
+                        }
+                        h3.product-title{
+                          margin: 0 10px;
+                          font-weight: 300;
+                          font-size: 20px;
+                          text-align: center;
+                         a{
+                            color: $black;
+                            text-decoration: none;
+                            transition:all 0.3s ease-in-out;
+                            &:hover{
+                                color:$mainGolden;
+                            }
+                         }
+                        }
+                    }
+                }
+                td.price-col{
+                    font-size: 18px;
+                    color:$black;
+
+                }
+                td.quantity-col{
+                    padding: 0;
+                    
+                    .cart-product-quantity{
+                        border: 1px solid $lightBlack;
+                        width: 100px;
+                        margin: 0 auto;
+                        .input-group{
+                            input{
+                                width: 30%;
+                                display: block;
+                                border:none;
+                            }
+                            i{
+                                color: $lightBlack;
+                                font-size: 12px;
+                                transition: all 0.3s ease-in-out;
+                                &:hover{
+                                     color:$mainGolden;
+                                }
+                            }
+                        }
+                    }
+                }
+                td.total-col{
+                    color: $mainGolden;
+                    font-size: 18px;
+                }
+                td.remove-col{
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        i{
+                           font-size: 14px; 
+                           color: $lightBlack;
+                           transition:all 0.3s ease-in-out;
+                           &:hover{
+                               color:$black;
+                           }
+                        }
+                    }
+                }
+            }
+
+            
+           
+        }
+    }
+
+
+
+    .cart-summary{
+      border:1px dashed $darkGray;
+      background: $gray;
+      padding: 20px;
+      h3{
+          font-size: 18px;
+          color:$lightBlack;
+          border-bottom:1px solid $lightBlack;
+          padding: 10px 0;
+      }
+      table{
+          
+          tbody{
+              tr{
+                  display: flex;
+                  justify-content: space-between;
+                  td{
+                     padding: 10px 0;
+                     font-size: 16px;
+                     font-weight: 400;
+                    
+                  }
+                            
+              }
+             
+              tr.summary-shipping-row{
+                
+                td{
+                    font-size: 16px;
+                    padding: 0;
+                    font-weight: 400;
+                    color: $lightBlack;
+                    div.custom-control{
+                        
+                        padding: 0;
+                        input{
+                            border-radius: 50%;                        
+                        }
+                    }
+                }
+              }
+              tr.summary-shipping-estimate{
+                  
+                  height: auto;
+                  border-bottom:  1px solid $lightBlack;
+                  td{                   
+                     display: block;
+                     padding: 10p 0;
+                     width: 100%;
+                  }
+              }
+              tr.summary-shipping-change-address{
+                  td{
+                      padding: 6px 0;
+                      a{
+                          color:$darkGray;
+                          text-transform: capitalize;
+                          transition:all 0.3s ease-in-out;
+                          &:hover{
+                              color:$mainGolden;
+                          }
+                      }
+                  }
+              }
+              tr.summary-total{
+                color:$mainGolden;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration:capitalize;
+              }
+              tr.add-to-cart{
+               
+                td{
+                    width:100% !important;
+                }
+            }
+          }
+      }
+
+    }
+}
+
+@media  screen and (max-width:800px){
+ .table-cart{
+     margin-bottom: 30px;
+    thead{
+        display: none;
+    }
+    tbody td{
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+    }
+ }
+}

@@ -1,0 +1,76 @@
+.checkout{
+
+    .coupon-input-group{
+     
+         position:relative;
+        .checkout-coupon-input{
+           
+            border:1px dashed $darkGray;
+            transition:all 0.3s ease-in-out;
+            &:focus{
+                border-color: $mainGolden;
+                box-shadow: none;        
+            }
+            
+        }
+
+        .checkout-coupon-label{
+            position: absolute;
+            top:8px;
+            left: 8px;
+            span{
+                color:$mainGolden;
+            }
+        }
+        
+    }
+
+    .input-group{
+        label{
+            width:100%;
+            display: block;
+            color:$lightBlack;
+        }
+        input{
+            background-color: $gray;
+            &:focus{
+                border: 1px solid $mainGolden;
+                box-shadow: none;
+                background-color: $white;
+            }
+        }
+    }
+
+    .form-check{
+        //margin:8px 0 8px 0;
+        input{
+            width:16px;
+            height: 16px;
+            margin-right: 20px;
+           
+        }
+        label{
+            color: $lightBlack;
+        }
+    }
+    .order-note-group{
+      
+        textarea{
+            width: 100%;
+            background-color: $gray;
+            box-shadow: none;
+            &:focus{
+                outline:0;
+                background-color: $white;
+                border:2px solid $mainGolden !important;
+            }
+        }
+    }
+
+    .checkout-title{
+        color: $black;
+        font-size: 20px;
+    }
+   
+     
+}

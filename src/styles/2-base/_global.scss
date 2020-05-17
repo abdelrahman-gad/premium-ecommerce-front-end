@@ -13,3 +13,41 @@ body{
 .border-bottem{
     border-bottom: 1px solid $lightBlack;
 }
+.btn-outline-golden{
+   border: 1px solid $mainGolden !important;
+   text-transform: uppercase;
+   font-size: 14px;
+   text-align: center;
+   width:100%;
+   
+   border-radius: 0 !important;
+   font-weight: 400;
+   padding: auto 40px;
+   color:$mainGolden !important;
+   transition: all 0.3s ease-in-out !important;
+   &:hover{
+       background-color: $mainGolden !important;
+       color:$white !important;
+   }
+}
+
+.btn-outline-dark{
+    border: 1px solid $darkGray !important;
+    font-size: 14px !important;
+    font-weight: 400;
+    border-radius: 0 !important;
+    color: $black ;
+    text-transform: uppercase;
+    transition :all 0.3s ease-in-out !important;
+    i{
+        font-size:12px !important;
+     
+    }
+     
+    &:hover{
+        background-color: $lightGray !important;
+        color: $mainGolden !important;
+        color: $black;
+       
+    }
+}

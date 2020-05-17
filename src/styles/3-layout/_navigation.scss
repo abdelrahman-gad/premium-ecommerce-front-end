@@ -1,1 +1,96 @@
-// navigation
+// navigation [top-header sticky-wrapper] 
+
+
+
+header{
+    border:1px solid #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    .header-top{
+        border:1px solid #333;
+        padding: 8px;
+        display: flex;  
+        justify-content: space-between; 
+        height: 44px;
+        .header-left{
+            border:1px solid #333;
+            display: flex;  
+            justify-content: space-between;
+            padding: 0;
+        
+            .header-dropdown{
+                margin-left: 20px;
+                position: relative;
+              
+             }
+             
+             a{
+                font-size: 14px;
+                text-decoration: none;
+                font-weight: 100;
+                color:#888;
+                text-transform: uppercase;
+                
+                margin: 0;
+               
+            }
+            .header-menu{
+                display: block;
+                position: absolute;
+                top:34px;
+                left: -20px;
+                background-color: lavenderblush;
+                @include specify;
+                li{
+                    list-style: none;
+                    text-align: left;
+                    @include specify;
+                    margin-left: -30px;   
+                }
+            }
+            
+       }
+       
+      
+       
+       
+       
+      
+       .header-right{
+           border:1px solid crimson;
+           display: flex;
+           justify-content: space-between;
+           .top-menu{
+            border:1px solid #333;
+        }
+        
+          .top-menu li{
+            display: flex;
+        }
+        
+          .top-menu li ul{
+            display: flex;
+            justify-content: space-between;
+        }
+       }
+       
+       
+    
+    }
+    
+     
+    i {
+        margin: 0 8px;
+        font-size: 10px;
+        font-weight: 100;
+    }
+    
+}
+ 
+
+
+
+
+
+
+
