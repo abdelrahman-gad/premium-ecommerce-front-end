@@ -1,0 +1,112 @@
+.login-bg{
+    background: url(../../../build/imgs/pages/login/login-bg.jpg)   no-repeat ;
+    overflow-x: hidden;
+    background-size: cover;
+    height: 700px;
+}
+
+.login-container{
+   
+     background-color: $white;
+     padding: 40px;
+    .login-nav{
+        
+        
+        border-bottom: 1px solid $gray;
+        display: flex;
+        justify-content: space-evenly;
+        li{
+            
+            width: 50%;
+            list-style-type: none;
+            
+            a{
+                 width: 100%;
+                 text-align: center;
+                 display: block;
+                 text-decoration:none;
+                 font-size: 28px ;
+                 font-weight: 500;
+                 color: $black;
+                 padding: 10px 0 8px 0;
+               
+            }
+            .active-link{
+                border-bottom: 1px solid $mainGolden;
+            }
+        }
+    }
+    .login-content{
+     
+        //position: absolute;
+         height: 400px;
+         position: relative;
+         padding-top: 20px;
+         .login-content-form{
+             .social-login{
+                 text-align: center;
+                 width: 100%;
+                 position: relative;
+                 left: 12px;
+                 border-top: 1px solid $darkGray;
+                 padding-top: 30px;
+                 margin-top: 20px;
+                 .social-login-links{
+                     display: flex;
+                     justify-content: space-evenly;
+                     margin-top: 20px;
+                     .social-login-link{
+                         width: 44%;
+                         i.fa-google{
+                             color:$googleIconColor ;
+                         }
+                         i.fa-facebook{
+                             color:$facebookIconColor;
+                         }
+                     }
+                 }
+                 .social-login-text{
+               
+                     margin: auto;
+                 }
+             }
+            .input-group{
+                width: 90%;
+                
+                position: relative;
+                left: 18px;
+                
+                label{
+                    width:100%;
+                    display: block;
+                    color:$lightBlack;
+                }
+                input{
+                    background-color: $gray;
+                    &:focus{
+                        border: 1px solid $mainGolden;
+                        box-shadow: none;
+                        background-color: $white;
+                    }
+                }
+            }
+            .btn-login{
+                margin-left: 0;
+            }
+
+         }
+        .signin{
+            display: none;
+         }
+         .register{
+            display: none;
+
+        }
+         .active{
+            display: block;
+         }
+
+    }
+
+    
+}

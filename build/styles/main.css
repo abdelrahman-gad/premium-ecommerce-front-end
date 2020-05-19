@@ -629,73 +629,73 @@ footer .footer-bottom {
   border-bottom: 1px solid #cc9966;
 }
 
-.cart .checkout .coupon-input-group {
+.cart form .coupon-input-group {
   position: relative;
 }
 
-.cart .checkout .coupon-input-group .checkout-coupon-input {
+.cart form .coupon-input-group .checkout-coupon-input {
   border: 1px dashed #ccc;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.cart .checkout .coupon-input-group .checkout-coupon-input:focus {
+.cart form .coupon-input-group .checkout-coupon-input:focus {
   border-color: #cc9966;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.cart .checkout .coupon-input-group .checkout-coupon-label {
+.cart form .coupon-input-group .checkout-coupon-label {
   position: absolute;
   top: 8px;
   left: 8px;
 }
 
-.cart .checkout .coupon-input-group .checkout-coupon-label span {
+.cart form .coupon-input-group .checkout-coupon-label span {
   color: #cc9966;
 }
 
-.cart .checkout .input-group label {
+.cart form .input-group label {
   width: 100%;
   display: block;
   color: #777;
 }
 
-.cart .checkout .input-group input {
+.cart form .input-group input {
   background-color: #f9f9f9;
 }
 
-.cart .checkout .input-group input:focus {
+.cart form .input-group input:focus {
   border: 1px solid #cc9966;
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: #fff;
 }
 
-.cart .checkout .form-check input {
+.cart form .form-check input {
   width: 16px;
   height: 16px;
   margin-right: 20px;
 }
 
-.cart .checkout .form-check label {
+.cart form .form-check label {
   color: #777;
 }
 
-.cart .checkout .order-note-group textarea {
+.cart form .order-note-group textarea {
   width: 100%;
   background-color: #f9f9f9;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.cart .checkout .order-note-group textarea:focus {
+.cart form .order-note-group textarea:focus {
   outline: 0;
   background-color: #fff;
   border: 2px solid #cc9966 !important;
 }
 
-.cart .checkout .checkout-title {
+.cart form .checkout-title {
   color: #333;
   font-size: 20px;
 }
@@ -1269,5 +1269,128 @@ footer .footer-bottom {
 
 .show {
   height: auto !important;
+}
+
+.login-bg {
+  background: url(../../../build/imgs/pages/login/login-bg.jpg) no-repeat;
+  overflow-x: hidden;
+  background-size: cover;
+  height: 700px;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.login-container .login-nav {
+  border-bottom: 1px solid #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.login-container .login-nav li {
+  width: 50%;
+  list-style-type: none;
+}
+
+.login-container .login-nav li a {
+  width: 100%;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
+  padding: 10px 0 8px 0;
+}
+
+.login-container .login-nav li .active-link {
+  border-bottom: 1px solid #cc9966;
+}
+
+.login-container .login-content {
+  height: 400px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.login-container .login-content .login-content-form .social-login {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  left: 12px;
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+.login-container .login-content .login-content-form .social-login .social-login-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.login-container .login-content .login-content-form .social-login .social-login-links .social-login-link {
+  width: 44%;
+}
+
+.login-container .login-content .login-content-form .social-login .social-login-links .social-login-link i.fa-google {
+  color: #cc3333;
+}
+
+.login-container .login-content .login-content-form .social-login .social-login-links .social-login-link i.fa-facebook {
+  color: #3366cc;
+}
+
+.login-container .login-content .login-content-form .social-login .social-login-text {
+  margin: auto;
+}
+
+.login-container .login-content .login-content-form .input-group {
+  width: 90%;
+  position: relative;
+  left: 18px;
+}
+
+.login-container .login-content .login-content-form .input-group label {
+  width: 100%;
+  display: block;
+  color: #777;
+}
+
+.login-container .login-content .login-content-form .input-group input {
+  background-color: #f9f9f9;
+}
+
+.login-container .login-content .login-content-form .input-group input:focus {
+  border: 1px solid #cc9966;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fff;
+}
+
+.login-container .login-content .login-content-form .btn-login {
+  margin-left: 0;
+}
+
+.login-container .login-content .signin {
+  display: none;
+}
+
+.login-container .login-content .register {
+  display: none;
+}
+
+.login-container .login-content .active {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
