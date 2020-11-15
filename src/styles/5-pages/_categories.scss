@@ -3,13 +3,15 @@
     .widget{
            padding:10px 0  8px 0;
            border-top:1px solid $darkGray;
-           transition: all 0.4s ease-in-out !important;
-
+           .collapse{
+               transition: all 0.4s ease-in-out !important;
+           }
     }
     .widget-clean{
-        .filter{
+        border-top:none;
+         .filter{
            
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
             text-transform: capitalize;
             display: flex;
@@ -21,7 +23,42 @@
         }
     }
 
-    .widget-collapsible{
+
+    // start collapsible content
+
+    
+    .collapsible {
+        background-color: transparent ;
+        color: $black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border-top: 1px solid $gray;
+        padding: 8px 0; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+        font-size: 18px;
+        }
+    }
+
+       
+
+     .content {
+        padding: 0px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        background-color: transparent;
+        }
+
+        // end collapsable content
+    
         
             a.widget-title{
                 color: $lightBlack;
@@ -60,15 +97,16 @@
                           }
                       }
                       label.item-count{
-                        margin-right: 10px;
+                        margin-right: 0px;
                         background-color: $gray;
                         display: inline-flex;
                         justify-content: center;
                         align-items: center;
-                        border-radius: 4px;
+                        border-radius: 50px;
                         color: $lightBlack;
-                        width:24px;
-                        height: 20px;
+                        width:30px;
+                        height: 30px;
+                        line-height: 30px;
                         text-align: center;
                         margin-top: auto;
                         vertical-align: middle;
@@ -79,7 +117,7 @@
 
        
         
-    }
+    
 }
 
 .products{
@@ -88,5 +126,4 @@
 
 .show{
    height: auto !important;
-
 }

@@ -1,1 +1,9 @@
-// reset
+// reset some styles used in framework or library
+
+.form-control:focus,
+.btn-increment:focus , 
+.btn-decrement:focus {
+    box-shadow: none !important;
+    color: $mainGolden !important;
+}
+

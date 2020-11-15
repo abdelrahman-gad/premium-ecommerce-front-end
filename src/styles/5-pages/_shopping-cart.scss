@@ -1,5 +1,4 @@
 // cart
-.cart{
 
 // adding checkout  styles
      @import 'checkout';
@@ -21,8 +20,6 @@
             }
         }
         tbody{
-         
-            
             tr{
              
                // display: flex;
@@ -73,19 +70,29 @@
                     color:$black;
 
                 }
+                td.stock-status{
+                 
+                    padding-left: 10px;
+                }
                 td.quantity-col{
                     padding: 0;
                     
                     .cart-product-quantity{
-                        border: 1px solid $lightBlack;
+                        border: 1px solid $gray;
                         width: 100px;
                         margin: 0 auto;
+                        
                         .input-group{
                             input{
                                 width: 30%;
                                 display: block;
-                                border:none;
+                                border: none;
                             }
+                            input:focus , input:active {
+                                outline:  0 !important;
+                                border:0 !important;
+                            }
+
                             i{
                                 color: $lightBlack;
                                 font-size: 12px;
@@ -102,9 +109,14 @@
                     font-size: 18px;
                 }
                 td.remove-col{
-                    button {
+                     .btn-remove:focus{
+                         border: none !important;
+                         outline: none !important;
+                     }  
+                     .btn-remove {
                         background-color: transparent;
-                        border: none;
+                        border: none !important;
+                      
                         i{
                            font-size: 14px; 
                            color: $lightBlack;
@@ -204,7 +216,7 @@
       }
 
     }
-}
+
 
 @media  screen and (max-width:800px){
  .table-cart{

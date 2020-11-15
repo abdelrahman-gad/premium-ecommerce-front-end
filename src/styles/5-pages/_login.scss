@@ -6,7 +6,7 @@
 }
 
 .login-container{
-   
+    
      background-color: $white;
      padding: 40px;
     .login-nav{
@@ -38,11 +38,15 @@
     }
     .login-content{
      
-        //position: absolute;
          height: 400px;
          position: relative;
          padding-top: 20px;
          .login-content-form{
+             position: absolute;
+             top: 0;
+             left:0;
+             width: 100%;
+
              .social-login{
                  text-align: center;
                  width: 100%;
@@ -52,22 +56,27 @@
                  padding-top: 30px;
                  margin-top: 20px;
                  .social-login-links{
-                     display: flex;
-                     justify-content: space-evenly;
+                     display: block;
+                    
                      margin-top: 20px;
                      .social-login-link{
-                         width: 44%;
+                         width: 100% !important;
+                         margin-bottom: 10px;
+                         i{
+                             font-size: 40px;
+                         }
                          i.fa-google{
-                             color:$googleIconColor ;
+                             color:$googleIconColor;
                          }
                          i.fa-facebook{
                              color:$facebookIconColor;
                          }
+                        
                      }
                  }
                  .social-login-text{
-               
                      margin: auto;
+                     font-size: 20px;
                  }
              }
             .input-group{
@@ -96,17 +105,17 @@
 
          }
         .signin{
-            display: none;
+           visibility: hidden;
+        
          }
          .register{
-            display: none;
-
+           visibility: hidden;
         }
          .active{
-            display: block;
+            visibility: visible;
          }
 
     }
-
     
 }
+

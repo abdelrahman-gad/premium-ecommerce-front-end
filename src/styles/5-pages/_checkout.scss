@@ -1,4 +1,4 @@
-form{
+
 
     .coupon-input-group{
      
@@ -34,12 +34,14 @@ form{
         input{
             background-color: $gray;
             &:focus{
-                border: 1px solid $mainGolden;
+                border: 1px solid $mainGolden !important;
                 box-shadow: none;
                 background-color: $white;
             }
         }
     }
+
+
 
     .form-check{
         //margin:8px 0 8px 0;
@@ -73,4 +75,3 @@ form{
     }
    
      
-}

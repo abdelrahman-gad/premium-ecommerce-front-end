@@ -1,0 +1,21 @@
+.contact-info{
+    &-office{
+        h5{
+            color: $lightBlack;
+            margin-bottom: 16px;
+        }
+        &-item{
+            display: flex;
+            i{
+              color: $mainGolden;
+              margin-right: 16px;
+              margin-top: 6px;
+            }
+            .text{
+                font-size: 16px;
+                color: $lightBlack;
+            
+            }
+        }     
+    }
+}

@@ -5,5 +5,4 @@ $('.product').mouseenter(function(){
 }).mouseleave(function(){
     $(this).find('.product-action-vertical').css({opacity:0,right:'40px'});
     console.log('mouseleave');
-    
 });
