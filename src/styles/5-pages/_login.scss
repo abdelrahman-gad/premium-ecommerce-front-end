@@ -2,120 +2,196 @@
     background: url(../../../build/imgs/pages/login/login-bg.jpg)   no-repeat ;
     overflow-x: hidden;
     background-size: cover;
-    height: 700px;
+    height: auto;
 }
 
-.login-container{
-    
-     background-color: $white;
-     padding: 40px;
-    .login-nav{
-        
-        
-        border-bottom: 1px solid $gray;
-        display: flex;
-        justify-content: space-evenly;
-        li{
-            
-            width: 50%;
-            list-style-type: none;
-            
-            a{
-                 width: 100%;
-                 text-align: center;
-                 display: block;
-                 text-decoration:none;
-                 font-size: 28px ;
-                 font-weight: 500;
-                 color: $black;
-                 padding: 10px 0 8px 0;
-               
-            }
-            .active-link{
-                border-bottom: 1px solid $mainGolden;
-            }
+html {
+    overflow-y: scroll;
+  }
+  .login-form {
+    background:#fff;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  }
+  .login-form  .top-area {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  .login-form  .top-area:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .login-form  .top-area li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background:#ffff;
+    color:$black;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+  }
+  .login-form  .top-area li a:hover {
+  //  background: #0080ff;
+    color: $mainGolden;
+  }
+  .login-form  .top-area .active a {
+    color: $black;
+    border-bottom:2px solid $mainGolden;
+  }
+  
+  .login-form  .tab-content > div:last-child {
+    display: none;
+  }
+  
+  .login-form  h1 {
+    text-align: center;
+    color: #444;
+    font-weight: 300;
+    margin: 0 0 40px;
+  }
+  .login-form  label {
+    position: absolute;
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+    left:10px;
+    top:4px;
+    color: $mainGolden;
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 22px;
+  }
+  .login-form  label .req {
+    margin: 8px;
+    color: $mainGolden;
+  }
+  .login-form  label.active {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    left: 4px;
+    font-size: 14px;
+  }
+  .login-form  label.active .req {
+    opacity: 0;
+  }
+  .login-form  label.highlight {
+    color: $mainGolden;
+  }
+  .login-form  input, .login-form  textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: $mainGolden;
+    padding: 8px;
+    border-radius: 0;
+    transition: border-color .25s ease , box-shadow .25s ease;
+  }
+
+  .login-form  input:focus, .login-form  textarea:focus {
+    outline: 0;
+    border-color: $mainGolden;
+  }
+
+  .login-form  input:focus .label-field{
+    display: none !important;
+  }
+  .login-form  textarea { 
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+  }
+  .login-form  .label-field {
+    position: relative;
+    margin-bottom: 40px;
+  }
+   
+
+  .login-form   .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .login-form   .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .login-form  .top-row > div:last-child {
+    margin: 0;
+  }
+  .login-form  .button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: $gray;
+    color: $mainGolden;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+  }
+  .login-form  .button:hover, .button:focus {
+    background: $mainGolden;
+    color:#fff;
+  }
+  .login-form   .button-block {
+    display: block;
+    width: 100%;
+  }
+  .login-form   .forgot {
+    margin-top: -20px;
+    text-align: right;
+    a{
+        color:$black;
+        &:hover{
+            color:$mainGolden;
         }
     }
-    .login-content{
-     
-         height: 400px;
-         position: relative;
-         padding-top: 20px;
-         .login-content-form{
-             position: absolute;
-             top: 0;
-             left:0;
-             width: 100%;
-
-             .social-login{
-                 text-align: center;
-                 width: 100%;
-                 position: relative;
-                 left: 12px;
-                 border-top: 1px solid $darkGray;
-                 padding-top: 30px;
-                 margin-top: 20px;
-                 .social-login-links{
-                     display: block;
-                    
-                     margin-top: 20px;
-                     .social-login-link{
-                         width: 100% !important;
-                         margin-bottom: 10px;
-                         i{
-                             font-size: 40px;
-                         }
-                         i.fa-google{
-                             color:$googleIconColor;
-                         }
-                         i.fa-facebook{
-                             color:$facebookIconColor;
-                         }
-                        
-                     }
-                 }
-                 .social-login-text{
-                     margin: auto;
-                     font-size: 20px;
-                 }
-             }
-            .input-group{
-                width: 90%;
-                
-                position: relative;
-                left: 18px;
-                
-                label{
-                    width:100%;
-                    display: block;
-                    color:$lightBlack;
-                }
-                input{
-                    background-color: $gray;
-                    &:focus{
-                        border: 1px solid $mainGolden;
-                        box-shadow: none;
-                        background-color: $white;
-                    }
-                }
-            }
-            .btn-login{
-                margin-left: 0;
-            }
-
-         }
-        .signin{
-           visibility: hidden;
-        
-         }
-         .register{
-           visibility: hidden;
-        }
-         .active{
-            visibility: visible;
-         }
-
-    }
+  }
+  
+  .social-login{
+   
+  }
+  .login-form  .social-login .social-login-text{
+     text-align:center !important;
     
-}
-
+     width:100%;
+    
+  }
+  .login-form  .social-login a {
+    transition:all 0.3s ease;
+    border:1px solid $mainGolden;
+  }
+  .login-form  .social-login a:hover{
+    background-color: $gray;
+    color: $mainGolden;
+    border:1px solid $mainGolden;
+  }
+  .login-form  .social-login  a i.fa-facebook {
+    color:#3b5998;
+  }
+  .login-form  .social-login a i.fa-google{
+    color:#FBBC05;
+  }
+  
+  @media (max-width: 765px) {
+    .login-form     label {
+        left: 4px;
+      }   
+  }
+  

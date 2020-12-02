@@ -1,0 +1,48 @@
+/* Style the tab */
+.tablinks {
+    float: left;
+    //border: 1px solid $white;
+    background-color: $white;
+    width: 100%;
+    height: auto;
+    border: none !important;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tablinks button.tablink {
+    display: block;
+    background-color: $white;
+    color: black;
+    padding: 22px 16px;
+    width: 70%;
+    margin-left: auto;
+    border: none;
+    border-bottom:1px solid $gray;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablinks button:hover {
+    border-bottom:1px solid $mainGolden;
+    color:$mainGolden;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tablinks button.active {
+    border-bottom:1px solid $mainGolden;
+    color:$mainGolden; 
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    //border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: auto;
+    display: none;
+  }

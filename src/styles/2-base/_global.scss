@@ -63,16 +63,9 @@ body{
     color:$youtubeIconColor;
 }
 
-
-
 .img-rounded{
     border-radius:50%;
 }
-
-
-
-
-
 
 .border-bottem{
     border-bottom: 1px solid $lightBlack;
@@ -83,8 +76,7 @@ body{
     width: auto;
 }
 
-
-.btn-squar{
+.btn-square{
     border-radius: 0 !important;
 }
 .btn-rounded{
@@ -94,6 +86,7 @@ body{
 .btn-lg{
     font-weight: 400;
     padding: auto 40px; 
+    width: 70px;
 }
 .btn-sm{
     color: $lightBlack;
