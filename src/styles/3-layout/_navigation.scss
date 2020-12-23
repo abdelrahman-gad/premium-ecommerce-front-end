@@ -257,12 +257,16 @@ a{
 	text-decoration: none;
 }
 /* header */
+
+
 .header-last{
 	display: block;
 	width: 100%;
-	position: relative;
+	// position: fixed;
 	z-index: 99;
 	padding:15px;
+	background-color: $white;
+	border-bottom:2px solid $gray;
 }
 .header-last .item-left{
 	flex:0 0 17%;
@@ -304,13 +308,17 @@ a{
 
 .header-last .item-right > ul > li.search-element {
 	position: relative;
+	left:3px;
+	top: 2px;
+	
 } 
 .header-last .item-right .search-input{
 	display: inline-block;
 	position: absolute;
+	border: 1px solid #333;
 	right: 20px;	
 	height: 30px;
-	width: 240px;
+	width: 250px;
 	padding: 8px 16px;
 	border-radius: 1px solid $mainGolden;
 	border: 1px solid $lightBlack;
@@ -519,6 +527,7 @@ a{
 .header-last  ul > li .sub-menu{
 	position: absolute;
 	z-index: 500;
+	height: auto;
 	background-color:#ffffff;
 	box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3); 
 	padding: 20px 30px;
@@ -920,3 +929,38 @@ a{
 	visibility: visible !important;
 	opacity: 1 !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.backToTop{
+	display: none;
+	position: fixed;
+	bottom: 100px;
+	right: 50px;
+	font-size: 3em;
+	z-index: 9999;
+	height: 50px;
+	width: 50px;
+	background-color: $mainGolden;
+	text-align: center;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+  }
+  .backToTop i{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	color: #fff;
+  }
+  .backToTop i:hover{
+	color: #aaa;
+  }

@@ -7,7 +7,9 @@
      justify-content: space-evenly;
      align-items: center;
     .box-icon{
-       i{
+        margin-right: 15px;
+        align-self: top !important;
+        i{
            font-size: 50px;
            color: $mainGolden;
        }
